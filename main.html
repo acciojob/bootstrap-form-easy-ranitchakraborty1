@@ -15,18 +15,22 @@
   <div class="col-md-4">
     <label for="first-name-input" class="form-label">First name</label>
     <input type="text" class="form-control" id="first-name-input"  required>
+	  <div class="invalid-feedback">first name required!</div>
   </div>
   <div class="col-md-4">
     <label for="last-name-input" class="form-label">Last name</label>
     <input type="text" class="form-control" id="last-name-input"  required>
+	  <div class="invalid-feedback">Last name required!</div>
   </div>
  <div class="col-md-4">
     <label for="email-input" class="form-label">Email Address</label>
     <input type="text" class="form-control" id="email-input"  required>
+	 <div class="invalid-feedback">Email required!</div>
   </div>
   <div class="col-md-6">
     <label for="college-input" class="form-label">College</label>
     <input type="text" class="form-control" id="college-input" required>
+	  <div class="invalid-feedback">Please provide a valid college.</div>
   </div>
   <div class="col-md-3">
     <label for="year-input" class="form-label">Graduation Year</label>
@@ -37,10 +41,12 @@
 		<option>2022</option>
 		<option>2023</option>
     </select>
+	  <div class="invalid-feedback">Please select a valid Grauduatuon year.</div>
   </div>
   <div class="col-md-3">
     <label for="roll-no-input" class="form-label">Roll No.</label>
     <input type="text" class="form-control" id="roll-no-input" required>
+	  <div class="invalid-feedback">Please provide a valid Roll no.</div>
   </div>
   <div class="col-12">
     <div class="form-check">
@@ -48,6 +54,7 @@
       <label class="form-check-label" for="conditions-checkbox">
         Agree to terms and conditions
       </label>
+		<div class="invalid-feedback">you must agree before submitting.</div>
     </div>
   </div>
   <div class="col-12">
