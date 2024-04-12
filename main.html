@@ -10,43 +10,49 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	 <h1 style="text-align:center;">Internship Form</h1>
-  <form action="internship" method="post">
-    <div>
-      <label for="first-name-input">First Name:</label>
-      <input type="text" id="first-name-input" name="first_name" placeholder="First Name" required>
+<form class="row g-3">
+  <div class="col-md-4">
+    <label for="validationDefault01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationDefault01"  required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefault02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationDefault02"  required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefaultUsername" class="form-label">Email Address</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
     </div>
-    <div>
-      <label for="last-name-input">Last Name:</label>
-      <input type="text" id="last-name-input" name="last_name" placeholder="Last Name" required>
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationDefault03" required>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label">State</label>
+    <select class="form-select" id="validationDefault04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationDefault05" required>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
     </div>
-    <div>
-      <label for="email-input">Email:</label>
-      <input type="email" id="email-input" name="email" placeholder="xyz@abc.com" required>
-    </div>
-    <div>
-      <label for="college-input">College Name:</label>
-      <input type="text" id="college-input" name="college" placeholder="College Name" required>
-    </div>
-    <div>
-      <label for="roll-no-input">Roll No:</label>
-      <input type="text" id="roll-no-input" name="roll_no" placeholder="Roll No" required>
-    </div>
-    <div>
-      <label for="graduation-year-input">Graduation Year:</label>
-      <select id="graduation-year-input" name="graduation_year" required>
-        <option value="2020">2020</option>
-        <option value="2021">2021</option>
-        <option value="2022">2022</option>
-        <option value="2023">2023</option>
-      </select>
-    </div>
-    <div>
-		 <label for="conditions-checkbox">Agree to terms and conditions</label>
-      <input type="checkbox" id="conditions-checkbox" name="conditions" required>
-      </div>
-    <button type="submit">Submit form</button>
-  </form>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
